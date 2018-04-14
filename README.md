@@ -1,4 +1,4 @@
 # MotionTutorial
+latihan
 
-
-![alt text](https://raw.githubusercontent.com/MobileInnovationLab/motionsg-calculator-firdiar/blob/master/ss.jpg)
+![Screenshot](https://github.com/MobileInnovationLab/motionsg-calculator-firdiar/blob/master/ss.jpg)
