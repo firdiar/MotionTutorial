@@ -5,58 +5,157 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.group.ini.motion1.MainActivity"
-    android:background="#FFF6F1"
+    android:background="#f0f0da"
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     >
 
     <LinearLayout
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
         >
-
-        <TextView
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/operatorp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login Page"
-            android:textSize="25dp"
-            android:textAlignment="center"
-            android:layout_margin="15dp"
-            />
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Enter Name"
-            android:layout_marginBottom="15dp"
-            />
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:hint="Passsword"
-            android:layout_marginBottom="15dp"
+            android:text="+"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/mybutton"
+            android:onClick="ChangeOperator"
             />
         <Button
-            android:id="@+id/login_Btn"
-            android:layout_marginTop="15dp"
-            android:layout_gravity="center"
-            android:layout_width="match_parent"
+            android:id="@+id/operatorn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="-"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/mybutton"
+            android:onClick="ChangeOperator"
+            />
+        <Button
+            android:id="@+id/operatork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/mybutton"
+            android:onClick="ChangeOperator"
+            />
+        <Button
+            android:id="@+id/operatorb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/mybutton"
+            android:onClick="ChangeOperator"
             />
 
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Operator"
+        android:textSize="20dp"
+        android:textColor="#b4a77e"
+        />
+    <TextView
+        android:id="@+id/currentoperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="50dp"
+        android:textColor="#b4a77e"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="7dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <EditText
+
+                android:id="@+id/num1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:textColor="#b4a77e"
+                android:inputType="number"
+                android:hint="Insert Number"
+
+                />
+
+
+
+            <EditText
+                android:id="@+id/num2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:textColor="#b4a77e"
+                android:hint="Insert Number"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/hitung_btn"
+            android:background="@drawable/mybutton"
+            android:textColor="#b4a77e"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:text="Hitung"
+
+
+            />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Hasil : "
+        android:textColor="#b4a77e"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/hasilhitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textColor="#b4a77e"
+        android:textSize="25dp"
+        />
+
 
 
 
 
 </LinearLayout>
+
